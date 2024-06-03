@@ -232,6 +232,8 @@ def contrato_p(idC):
     # Output the PDF to the defined path
     pdf.output(pdf_path)
 
+    
+
     return redirect(url_for('send_email', pdf_path=pdf_path))
 
 @app.route('/send_email')
@@ -239,7 +241,7 @@ def send_email():
     pdf_path = request.args.get('pdf_path')
     sender_email = 'pruebaautomatizacionemails@gmail.com'
     sender_password = 'hquw jsca rrym lwas'
-    recipient_email = '22301061550002@cetis155.edu.mx'
+    recipient_email = '22301061550036@cetis155.edu.mx'
     subject = 'Contrato Laboral'
     body = 'Adjunto encontrarás el contrato laboral en formato PDF.'
 
